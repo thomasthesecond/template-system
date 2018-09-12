@@ -1,0 +1,1 @@
+export { TextCaption } from "./textCaption";

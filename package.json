@@ -1,0 +1,30 @@
+{
+  "name": "template-system",
+  "version": "1.0.0",
+  "description": "Templating system built with React and CSS grid",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "@zeit/next-css": "^0.1.4",
+    "autoprefixer": "^8.1.0",
+    "classnames": "^2.2.5",
+    "next": "^5.0.0",
+    "postcss-grid-span": "^1.1.0",
+    "postcss-import": "^11.1.0",
+    "postcss-simple-vars": "^4.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "author": "Thomas Cunningham <thomasthesecond.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,36 @@
+.banner {
+  height: 130px;
+  position: relative;
+}
+
+.banner--white {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.banner--overlay {
+  background-color: transparent;
+  color: var(--color-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+  width: 100%;
+}
+
+.banner--brand-blue {
+  background-color: var(--color-brand-blue);
+  color: var(--color-white);
+}
+
+.container {
+  height: 100%;
+}
+
+.divider {
+  align-self: flex-end;
+}
+
+.divider--overlay {
+  border-top-color: var(--color-white);
+}

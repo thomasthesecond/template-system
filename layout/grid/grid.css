@@ -1,0 +1,42 @@
+:global(.grid),
+:global(.subgrid) {
+  display: grid;
+  grid-column-gap: var(--grid-column-gap);
+  grid-row-gap: var(--grid-row-gap);
+  justify-content: center;
+}
+
+/* Main grid layout; contains left and right margin */
+
+:global(.grid) {
+  /* stylelint-disable indentation */
+  grid-template-columns:
+    [full-start]
+      var(--grid-column-margin)
+        [container-start]
+          repeat(var(--grid-columns), [column-start] var(--grid-column-width))
+        [container-end]
+      var(--grid-column-margin)
+    [full-end];
+  /* stylelint-enable */
+}
+
+/* Sub-grid layout; contains same configuration as main grid, but without margins */
+
+:global(.subgrid),
+:global(.subgrid--full) {
+  /* stylelint-disable indentation */
+  grid-template-columns:
+    [container-start]
+      repeat(var(--grid-columns), var(--grid-column-width))
+    [container-end];
+  /* stylelint-enable */
+}
+
+:global(.subgrid) {
+  grid-column: container;
+}
+
+:global(.subgrid--full) {
+  grid-column: full;
+}

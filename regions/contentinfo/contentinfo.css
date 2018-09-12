@@ -1,0 +1,13 @@
+.contentinfo {
+  position: relative;
+}
+
+.container {
+  /* height: 100%; */
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.divider {
+  /* align-self: flex-end; */
+}

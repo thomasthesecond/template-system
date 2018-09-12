@@ -1,0 +1,16 @@
+:global(.divider),
+:global(.divider--container),
+:global(.divider--full) {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 0;
+  width: 100%;
+}
+
+:global(.divider--container) {
+  grid-column: container;
+}
+
+:global(.divider--full) {
+  grid-column: full;
+}

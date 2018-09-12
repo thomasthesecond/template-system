@@ -1,0 +1,16 @@
+:global(.container),
+:global(.container--full) {
+  width: 100%;
+}
+
+/* Creates a container with left and right gutters  */
+
+:global(.container) {
+  grid-column: container;
+}
+
+/* Creates a container that is full bleed (no left and right gutters) */
+
+:global(.container--full) {
+  grid-column: full;
+}

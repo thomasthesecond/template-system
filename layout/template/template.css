@@ -1,0 +1,72 @@
+/* Custom properties */
+
+:root {
+  --spacingTemplateAreaVertical: 80px;
+  --spacingTemplateAreaVerticalGrid: calc(var(--spacingTemplateAreaVertical) - var(--grid-row-gap));
+}
+
+/* Template */
+
+:global(.template) {
+  /* composes: grid from global; */
+  margin-bottom: calc(var(--grid-row-gap) * 1);
+  margin-top: calc(var(--grid-row-gap) * 1);
+}
+
+@media (min-width: 768px) {
+  :global(.template) {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :global(.template) {
+    margin-bottom: 80px;
+    margin-top: 8px;
+  }
+}
+
+/* Template area */
+
+:global(.templateArea) {
+  width: 100%;
+}
+
+/* Template placeholder */
+
+:global(.templatePlaceholder) {
+  background-color: gainsboro;
+  padding: 16px;
+  width: 100%;
+}
+
+/* Common template area: Contained */
+
+@supports (display: grid) {
+  .templateAreaContained {
+    /* grid-column: container; */
+    background-color: pink;
+    padding: 40px;
+  }
+}
+
+/* Common template area: Breadcrumbs */
+
+:global(.templateArea-breadcrumbs) {
+  margin-bottom: calc(var(--grid-row-gap) + 24px);
+}
+
+@supports (display: grid) {
+  :global(.templateArea-breadcrumbs) {
+    grid-column: container;
+    grid-row: 1;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 1023px) {
+  :global(.templateArea-breadcrumbs) {
+    display: none;
+  }
+}
