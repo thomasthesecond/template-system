@@ -1,3 +1,5 @@
+@import "../../styles/custom-media.css";
+
 /* Template area: Left rail module */
 
 .templateDetail {
@@ -5,8 +7,8 @@
 }
 
 .templateAreaLeftRailModule {
-  margin-bottom: calc(var(--grid-row-gap) * 1);
-  margin-top: calc(var(--grid-row-gap) * 1);
+  margin-bottom: var(--grid-row-gap);
+  margin-top: var(--grid-row-gap);
 }
 
 @media (min-width: 1024px) {
@@ -78,7 +80,7 @@
 /* Template area: Header */
 
 .templateArea-header {
-  margin-bottom: calc(var(--grid-row-gap) * 1);
+  margin-bottom: var(--grid-row-gap);
 }
 
 @supports (display: grid) {
@@ -145,8 +147,8 @@
 /* Template area: Article */
 
 .templateAreaHero + .templateAreaArticle {
-  margin-bottom: calc(var(--grid-row-gap) * 1);
-  margin-top: calc(var(--grid-row-gap) * 1);
+  margin-bottom: var(--grid-row-gap);
+  margin-top: var(--grid-row-gap);
 }
 
 @media (min-width: 1024px) {
@@ -197,8 +199,8 @@
 @supports (display: grid) {
   @media (max-width: 767px) {
     .templateAreaRightRailModulePadded {
-      padding-left: var(--margin);
-      padding-right: var(--margin);
+      padding-left: var(--grid-column-gap);
+      padding-right: var(--grid-column-gap);
     }
   }
 }

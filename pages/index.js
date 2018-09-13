@@ -1,5 +1,6 @@
+import "../styles/global.css";
 import { Grid } from  "../layout";
-import styles from "./styles.css";
+import styles from "./styles/index.css";
 
 export default () => (
   <Grid>

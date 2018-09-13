@@ -1,0 +1,21 @@
+@import "./custom-properties.css";
+@import "normalize.css";
+
+html {
+  font-size: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6;
+}

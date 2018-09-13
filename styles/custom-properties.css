@@ -1,24 +1,12 @@
-/* CSS custom properties */
+@import "./custom-media.css";
 
 :root {
-  /* Styles */
-  --border-color: #e4e4e4;
-
-  /* Breakpoints */
-  --mq-phone-end: 47.9375em; /* 767px */
-  --mq-tablet-start: 48em; /* 768px */
-  --mq-tablet-end: 63.9375em; /* 1023px */
-  --mq-laptop-start: 64em; /* 1024px */
-  --mq-laptop-end: 84.5625em; /* 1353px */
-  --mq-desktop-start: 84.625em; /* 1354px */
-
   /* Layout */
-  --grid-column-gap: 16px; /* 16px */
+  --grid-column-gap: 16px;
   --grid-column-margin: 0;
   --grid-column-width: 1fr;
   --grid-columns: 4;
   --grid-row-gap: 32px;
-  /* --margin: 16px; */
 
   /* Colors */
   --color-amethyst:      hsl(273, 47%, 60%);
@@ -40,52 +28,27 @@
   --color-white:         hsl(0, 0%, 100%);
 }
 
-@media (min-width: 768px) {
+@media (--mq-tablet-start) {
   :root {
     /* Layout */
     --grid-columns: 8;
   }
 }
 
-@media (min-width: 1024px) {
+@media (--mq-laptop-start) {
   :root {
     /* Layout */
     --grid-column-gap: 24px;
     --grid-column-margin: 8px;
     --grid-columns: 12;
-    /* --margin: 32px; */
   }
 }
 
-@media (min-width: 1376px) { /* 1354 */
+@media (--mq-desktop-start) {
   :root {
     /* Layout */
-    --grid-column-gap: 32px; /* 30 */
+    --grid-column-gap: 32px;
     --grid-column-margin: 1fr;
     --grid-column-width: 80px;
-    /* --margin: auto; */
   }
-}
-
-html {
-  font-size: 100%;
-  text-rendering: optimizeLegibility;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  color: #333;
-  background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-.welcome {
-  grid-column: column-start 4 / span 6;
 }

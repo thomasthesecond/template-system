@@ -1,0 +1,11 @@
+@import "../../styles/custom-media.css";
+
+.welcome {
+  grid-column: container;
+}
+
+@media (--mq-laptop-start) {
+  .welcome {
+    grid-column: column-start 4 / span 6;
+  }
+}
